@@ -33,7 +33,7 @@ $consultas = $sql->fetchAll();
 		</div>
     <script>
       setTimeout(() => {
-        window.location.href ="consulta.php";
+        window.location.href ="ver-dados.php";
       }, 5000);
     </script>
 <?php } ?> 
