@@ -39,7 +39,7 @@ if (isset($_POST['acao'])){
        
         $sql = $pdo->prepare("INSERT INTO localidade (cep, rua, numero, bairro, cidade, estado) VALUES (?,?,?,?,?,?)");
         $sql->execute(array($cep,$rua,$numero,$bairro,$cidade,$estado));
-        print("Tudo certo");
+        header('location: ver-dados.php?inclusao=1');
     }
 
 }
