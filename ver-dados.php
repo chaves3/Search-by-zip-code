@@ -25,6 +25,19 @@ $consultas = $sql->fetchAll();
 </nav>
 </header>    
 <br><br>
+  
+<?php if (isset($_GET['inclusao']) && $_GET['inclusao'] == 1) { ?>
+    
+    <div class="bg-success pt-2 text-white d-flex justify-content-center">
+			<h5>CEP inserido com sucesso</h5>
+		</div>
+    <script>
+      setTimeout(() => {
+        window.location.href ="consulta.php";
+      }, 5000);
+    </script>
+<?php } ?> 
+
 <div class="container">
     <table class="table">
        <thead>
